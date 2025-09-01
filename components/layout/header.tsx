@@ -2,13 +2,18 @@
 
 import { Button } from "@/components/ui/button"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
-import { Bell, Wallet } from "lucide-react"
+import { Bell, Wallet, Home } from "lucide-react"
+import Link from "next/link"
 
 export function Header() {
   return (
-    <header className="sticky top-0 z-30 flex h-16 items-center justify-between border-b border-border bg-background/80 backdrop-blur-sm px-6">
-      <div className="flex items-center space-x-4">
-        <h1 className="font-heading text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+    <header className="sticky top-0 z-30 flex h-16 items-center justify-between border-b border-border bg-background/80 backdrop-blur-sm px-4 sm:px-6">
+      <div className="flex items-center gap-2 sm:gap-4">
+        <Link href="/" className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground">
+          <Home className="h-5 w-5" />
+          <span className="hidden sm:inline">Home</span>
+        </Link>
+        <h1 className="font-heading text-xl sm:text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
           Welcome back
         </h1>
       </div>
