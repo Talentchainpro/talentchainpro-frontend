@@ -20,7 +20,7 @@ const openSans = Open_Sans({
 export const metadata: Metadata = {
   title: "TalentChain Pro - Web3 Talent Verification",
   description: "Verify skills, earn SBTs, and join the future of talent matching on Bitcoin",
-  generator: "v0.app",
+  // generator field removed to avoid showing any "Created with v0" attribution
 }
 
 export default function RootLayout({
